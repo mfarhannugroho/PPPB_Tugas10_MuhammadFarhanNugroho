@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <!-- CardView untuk mengelilingi tampilan item -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10px"
+        app:contentPadding="10dp">
+
+        <!-- CardView dalam CardView untuk gambar mahasiswa -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp"
+            android:layout_marginRight="2dp">
+
+            <!-- Menampilkan gambar mahasiswa -->
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/photo_1" /> <!-- Menetapkan sumber daya gambar untuk gambar mahasiswa -->
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Menampilkan nama mahasiswa -->
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/robotocondensedbold"
+            android:text="Student Name"
+            android:textSize="20dp"/> <!-- Menampilkan nama mahasiswa dengan gaya teks yang sesuai -->
+
+        <!-- Menampilkan IPK mahasiswa -->
+        <TextView
+            android:id="@+id/ipk_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_txt"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/robotocondensedregular"
+            android:layout_marginLeft="100dp"
+            android:text="Ipk"
+            android:textSize="20dp"/> <!-- Menampilkan IPK mahasiswa dengan gaya teks yang sesuai -->
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

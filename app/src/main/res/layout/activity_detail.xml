@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@drawable/bg"> <!-- Mengatur latar belakang dengan gambar dari sumber daya drawable -->
+
+    <!-- Menampilkan gambar mahasiswa -->
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/photo_1" /> <!-- Mengatur gambar awal dengan sumber daya drawable -->
+
+    <!-- Menampilkan nama mahasiswa -->
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotocondensedbold"
+        android:text="Nama Mahasiswa"
+        android:textSize="25dp"
+        android:textColor="@color/white"/> <!-- Mengatur gaya teks untuk nama mahasiswa -->
+
+    <!-- Menampilkan IPK mahasiswa -->
+    <TextView
+        android:id="@+id/ipk_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/robotocondensedbold"
+        android:text="IPK"
+        android:textSize="25dp"
+        android:textColor="@color/white"/> <!-- Mengatur gaya teks untuk IPK mahasiswa -->
+
+    <!-- Menampilkan informasi tambahan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRPL DTEDI SV UGM '2022"
+        android:textSize="25dp"
+        android:layout_below="@id/ipk_txt"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotocondensedbold"
+        android:layout_marginTop="10dp"/> <!-- Menampilkan informasi tambahan tentang mahasiswa atau program -->
+
+</RelativeLayout>
